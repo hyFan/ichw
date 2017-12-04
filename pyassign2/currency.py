@@ -139,9 +139,15 @@ def testAll():
     test_currency_response()
     test_exchange()
     print("All tests passed")
+    
 
-testAll()
-exchange(currency_from, currency_to, amount_from)
+def main():
+    testAll()
+    exchange(currency_from, currency_to, amount_from)
+    
+    
+if __name__ == "__main__":
+    main()
 
 
 
